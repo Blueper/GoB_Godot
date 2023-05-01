@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://qr2olojumlge"]
+
+[ext_resource type="Script" path="res://OuterNode.gd" id="1_lwl4w"]
+[ext_resource type="Texture2D" uid="uid://bal3l36yygtp2" path="res://textures/red_square.png" id="2_nifd1"]
+[ext_resource type="Script" path="res://PlayerSprite.gd" id="3_j7211"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_lwl4w")
+
+[node name="PlayerSprite" type="Sprite2D" parent="."]
+position = Vector2(259, 154)
+scale = Vector2(0.134021, 0.15)
+texture = ExtResource("2_nifd1")
+script = ExtResource("3_j7211")
+metadata/Name = "Player"

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://dot6ul2exysq0"]
+
+[ext_resource type="Script" path="res://OuterNode.gd" id="1_ko7tc"]
+[ext_resource type="Texture2D" uid="uid://bal3l36yygtp2" path="res://textures/red_square.png" id="1_nv57v"]
+[ext_resource type="Script" path="res://PlayerSprite.gd" id="2_llc0e"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ysgpa"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ko7tc")
+
+[node name="PlayerSprite" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_ysgpa")
+position = Vector2(259, 154)
+scale = Vector2(0.134021, 0.15)
+texture = ExtResource("1_nv57v")
+script = ExtResource("2_llc0e")
+metadata/Name = "Player"
+
+[node name="Label" type="Label" parent="."]
+offset_right = 156.0
+offset_bottom = 80.0
+text = "This is a test. Label text will update."
+
+[node name="PlayerSprite2" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_ysgpa")
+position = Vector2(396, 162)
+scale = Vector2(0.134021, 0.15)
+texture = ExtResource("1_nv57v")
+script = ExtResource("2_llc0e")
+metadata/Name = "Player"
